@@ -2,11 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  // Configure for Replit environment
-  experimental: {
-    allowedHosts: true,
-  },
-  // Allow all hosts for Replit proxy
+  // Configure for Replit environment - disable cache for proper preview updates
   async headers() {
     return [
       {
